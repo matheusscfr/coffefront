@@ -1,0 +1,46 @@
+@import "../styles/responsivo";
+@import "../styles/variaveis";
+
+
+.menu{
+   width: 100%;
+
+    padding: 0 250px;
+    @media (max-width: $desktop_xsm) {
+        padding: 20px 20px;
+      }
+      @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding: 20px $padding-horizontal-sm;
+      }
+      @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding: 20px $padding-horizontal-md;
+      }
+}
+
+.cardapio{
+
+    display: flex;
+    width: 100%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 50px 0;
+
+
+   
+      @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding: 50px $padding-horizontal-sm;
+      }
+      @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding: 50px $padding-horizontal-md;
+      }
+    &__titulo{
+        color: $dark;
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+        @media (max-width: $desktop_xsm) {
+          font-size: 2rem;
+          }
+    }
+
+}

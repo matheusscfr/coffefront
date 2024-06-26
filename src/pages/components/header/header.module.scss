@@ -1,0 +1,46 @@
+@import "../../../styles/responsivo";
+@import "../../../styles/variaveis";
+
+.header{
+    background-image: url(../../../assets/header2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    height: 260px;
+
+    @media (max-width: $desktop_xsm) {
+        padding: 0px;
+      }
+      @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        padding: 0px $padding-horizontal-sm;
+      }
+      @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        padding: 0px $padding-horizontal-md;
+      }
+
+    &__titulo{
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 3.5rem;
+        max-width: 600px;
+        padding-left: 2% ;
+
+        @media (max-width: $desktop_xsm) {
+            font-size: 2.4rem;
+            align-items: center;
+            max-width: 380px;
+
+          }
+          @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+            padding: 0px $padding-horizontal-sm;
+          }
+          @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+            padding: 0px $padding-horizontal-md;
+          }
+    }
+
+}
